@@ -11,6 +11,7 @@ This application can be used to detect the plagiarism of two files.
 OR
 
 - an executable jar file has been generated and can be used by the command:
+
 	java -jar PlagiarismDetector.jar <Synonyms File Path> <Input File 1 Path> <Input File 2 Path> <Optional Tuple Size>
 	
 The first three arguments are required and the fourth argument that is, tuple size is optional.
@@ -35,6 +36,7 @@ She is happy,
 He is sad.
 
 3. Input File 2 file2.txt
+
 go for a run.
 
 she. is 'cheerful'
@@ -58,8 +60,11 @@ I am happy
 and sad
 
 then the tuples of size 3 for this file would be "I am happy", "am happy and", "happy and sad".
+
 2. Special characters like ";","." and others should not be considered and removed from the file before generating n-tuples.
+
 3. If a tuple is present twice in the file it is counted twice and the percentage of plagiarism is calculated accordingly. (Refer Future Enhacement 1)
+
 4. If the tuple size is greater than the number of words present in either file then the plagiarism won't be calculated and the user will be notified.
 
 ## Methodology:
@@ -77,7 +82,7 @@ f = number of tuples in file 1 = (w1 - n + 1)
 
 g = number of tuples in file 2 = (w2 - n + 1)
 
-then the complexity of the algorithm used is \(\theta(f*g)\).
+then the complexity of the algorithm used is theta(f*g).
 
 ## Future Enhancements:
 1. One can use HashSet to store the n-tuples of both files instead of ArrayList to compare the tuples of the files. 
