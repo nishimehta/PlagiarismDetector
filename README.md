@@ -6,17 +6,13 @@ This application can be used to detect the plagiarism of two files.
 - javac PlagiarismDetector/*.java
 
 ## How to run:
-- java PlagiarismDetector.PlagiarismDetector < Synonyms File Path > 
-	
-	<Input File 1 Path> <Input File 2 Path> <Optional Tuple Size>
+- java PlagiarismDetector.PlagiarismDetector < Synonyms File Path > < Input File 1 Path > < Input File 2 Path > < Optional Tuple Size >
 	
 OR
 
 - an executable jar file has been generated and can be used by the command:
 
-	java -jar PlagiarismDetector.jar < Synonyms File Path >
-	
-	<Input File 1 Path> <Input File 2 Path> <Optional Tuple Size>
+	java -jar PlagiarismDetector.jar < Synonyms File Path > < Input File 1 Path > < Input File 2 Path > < Optional Tuple Size >
 	
 The first three arguments are required and the fourth argument that is, tuple size is optional.
 
